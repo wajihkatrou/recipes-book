@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular7-tuto": {
+    "recipes-book": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular7-tuto",
+            "outputPath": "dist/recipes-book",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular7-tuto:build"
+            "browserTarget": "recipes-book:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular7-tuto:build:production"
+              "browserTarget": "recipes-book:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular7-tuto:build"
+            "browserTarget": "recipes-book:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "angular7-tuto-e2e": {
+    "recipes-book-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular7-tuto:serve"
+            "devServerTarget": "recipes-book:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular7-tuto:serve:production"
+              "devServerTarget": "recipes-book:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "angular7-tuto"
+  "defaultProject": "recipes-book"
 }
